@@ -1,0 +1,7 @@
+name: JobSystem
+version: '${project.version}'
+main: com.moody.jobsystem.JobSystem
+api-version: 1.19
+authors: [ Gustav ]
+commands:
+  createjobnpc:
