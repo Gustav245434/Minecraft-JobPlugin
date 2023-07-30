@@ -15,7 +15,7 @@ public class JobBlockExplodeListener implements Listener {
         for (Block affectedBlocks : event.blockList()) {
 
             switch (affectedBlocks.getType()) {
-                case OAK_LOG, SPRUCE_LOG, BIRCH_LOG, JUNGLE_LOG, ACACIA_LOG, DARK_OAK_LOG, MANGROVE_LOG:
+                case OAK_LOG, SPRUCE_LOG, BIRCH_LOG, JUNGLE_LOG, ACACIA_LOG, DARK_OAK_LOG, MANGROVE_LOG, DIRT, GRAVEL, SAND, CLAY:
                     new ChunkPersistentData(affectedBlocks.getChunk()).removeLocation(affectedBlocks.getLocation());
                     break;
             }

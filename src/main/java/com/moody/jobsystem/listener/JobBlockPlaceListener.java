@@ -11,7 +11,7 @@ public class JobBlockPlaceListener implements Listener {
     public void onJobBlockPlace(BlockPlaceEvent event) {
 
         switch (event.getBlockPlaced().getType()) {
-            case OAK_LOG, SPRUCE_LOG, BIRCH_LOG, JUNGLE_LOG, ACACIA_LOG, DARK_OAK_LOG, MANGROVE_LOG:
+            case OAK_LOG, SPRUCE_LOG, BIRCH_LOG, JUNGLE_LOG, ACACIA_LOG, DARK_OAK_LOG, MANGROVE_LOG, DIRT, GRAVEL, SAND, CLAY:
 
                 ChunkPersistentData persistentData = new ChunkPersistentData(event.getBlockPlaced().getChunk());
                     persistentData.addLocation(event.getBlockPlaced().getLocation());

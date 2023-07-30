@@ -29,6 +29,7 @@ public final class JobSystem extends JavaPlugin {
         pluginManager.registerEvents(new JobBlockPistonMoveListener(), this);
         pluginManager.registerEvents(new JobBlockExplodeListener(), this);
         pluginManager.registerEvents(new JobBlockPlacedByEndermanListener(), this);
+        pluginManager.registerEvents(new JobBlockEntityFormEvent(), this);
 
     }
 

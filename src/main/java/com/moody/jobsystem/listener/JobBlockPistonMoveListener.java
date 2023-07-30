@@ -20,7 +20,7 @@ public class JobBlockPistonMoveListener implements Listener {
 
         for (Block aktuellerBlock : event.getBlocks()) {
             switch (aktuellerBlock.getType()) {
-                case OAK_LOG, SPRUCE_LOG, BIRCH_LOG, JUNGLE_LOG, ACACIA_LOG, DARK_OAK_LOG, MANGROVE_LOG:
+                case OAK_LOG, SPRUCE_LOG, BIRCH_LOG, JUNGLE_LOG, ACACIA_LOG, DARK_OAK_LOG, MANGROVE_LOG, DIRT, GRAVEL, SAND, CLAY:
 
                     ChunkPersistentData data = new ChunkPersistentData(aktuellerBlock.getChunk());
                     if (data.contains(aktuellerBlock.getLocation())) {
@@ -69,7 +69,7 @@ public class JobBlockPistonMoveListener implements Listener {
 
         for (Block aktuellerBlock : event.getBlocks()) {
             switch (aktuellerBlock.getType()) {
-                case OAK_LOG, SPRUCE_LOG, BIRCH_LOG, JUNGLE_LOG, ACACIA_LOG, DARK_OAK_LOG, MANGROVE_LOG:
+                case OAK_LOG, SPRUCE_LOG, BIRCH_LOG, JUNGLE_LOG, ACACIA_LOG, DARK_OAK_LOG, MANGROVE_LOG, DIRT, GRAVEL, SAND, CLAY:
 
                     ChunkPersistentData data = new ChunkPersistentData(aktuellerBlock.getChunk());
                     if (data.contains(aktuellerBlock.getLocation())) {
